@@ -2,32 +2,334 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #2c2b2b;
 }
 
 body{
     background-color: #fed8a6;
 }
 
-.card{
+.container{
     background-color: #e9d7c0;
     border: 3px solid #9b7d61;
-    width: 50%;
+    width: 50vw;
     padding: 20px;
     margin: 0 auto;
     border-style: dashed;
 }
+/* Pestania principal */
+.home h1{
+    color: #2c2b2b;
+    padding: 0 0 15px 0;
+}
 
-.card img {
+.home h2{
+    color: #2c2b2b;
+    padding: 0 0 10px 0;
+}
+
+.home p{
+    padding: 0 0 30px 0;
+}
+
+.home img {
     float: right;
     margin-left: 20px;
-    width: 100px;
+    width: 200px;
+    height: 200px;
 }
 
-ul{
+.home ul{
     list-style-type: none;
+    display: flex;
+    gap: 25px;
 }
 
-a{
+.home a{
     text-decoration: none;
-    color: #9b7d61;
+    color: #914e14;
+}
+
+/* Pestania gustos */
+.gustos h1{
+    color: #2c2b2b;
+    padding: 0 0 15px 0;
+}
+
+.gustos p{
+    padding: 0 0 30px 0;
+}
+
+.gustos ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.gustos a{
+    text-decoration: none;
+    color: #914e14;
+}
+
+/* Pestania gustos culturales */
+
+.gustos_culturales h1{
+    color: #2c2b2b;
+    padding: 0 0 15px 0;
+}
+
+.gustos_culturales p{
+    padding: 0 0 20px 0;
+}
+.gustos_culturales a{
+    text-decoration: none;
+    color: #914e14;
+}
+
+.gustos_culturales ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.gustos_culturales img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.gustos_culturales .mosaico{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+}
+
+/* Pestania gustos musicales */
+.gustos_musicales h1{
+    color: #2c2b2b;
+    padding: 0 0 15px 0;
+}
+
+.gustos_musicales p{
+    padding: 0 0 20px 0;
+}
+
+.gustos_musicales a{
+    text-decoration: none;
+    color: #914e14;
+}
+.gustos_musicales ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.gustos_musicales img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.gustos_musicales .mosaico{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+}
+
+/* Pestania Hobbies */
+.hobbies h1{
+    color: #2c2b2b;
+    padding: 0 0 15px 0;
+}
+
+.hobbies p{
+    padding: 0 0 20px 0;
+}
+
+.hobbies ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.hobbies a{
+    text-decoration: none;
+    color: #914e14;
+}
+
+.hobbies img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.hobbies .mosaico{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+}
+
+/* Pestania informacion*/
+.informacion h1{
+    color: #2c2b2b;
+    padding: 0 0 15px 0;
+}
+
+.informacion p{
+    padding: 0 0 20px 0;
+}
+
+.informacion ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.informacion a{
+    text-decoration: none;
+    color: #914e14;
+}
+
+/* amigos */
+.pageAmigos h2{
+    color: #2c2b2b;
+    padding: 0 0 15px 0;
+}
+
+.pageAmigos p{
+    padding: 0 0 20px 0;
+}
+
+.pageAmigos .amigos img{
+    display: flex;
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+}
+
+.pageAmigos .bestie h2{
+    color: #2c2b2b;
+    padding: 0 0 15px 0;
+}
+
+.pageAmigos .bestie p{
+    padding: 0 0 20px 0;
+}
+
+.pageAmigos .bestie img{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+}
+
+.pageAmigos ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.pageAmigos a{
+    text-decoration: none;
+    color: #914e14;
+}
+
+/* pestania familia */
+.familia h1{
+    color: #2c2b2b;
+    padding: 0 0 15px 0;
+}
+
+.familia p{
+    padding: 0 0 20px 0;
+}
+
+.familia ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.familia a{
+    text-decoration: none;
+    color: #914e14;
+}
+
+.familia img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.familia .imagenF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 30px 0;
+}
+/* pestania mascotas */
+.mascotas h1{
+    color: #2c2b2b;
+    padding: 0 0 15px 0;
+}
+
+.mascotas p{
+    padding: 0 0 20px 0;
+}
+
+.mascotas ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.mascotas a{
+    text-decoration: none;
+    color: #914e14;
+}
+
+.mascotas img{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.mascotas .mosaico{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
 }
