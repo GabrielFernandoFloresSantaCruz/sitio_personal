@@ -159,22 +159,22 @@ body {
 }
 
 /*gustos culturales*/
-.screen-links_culturales {
+.screen-links-culturales {
     margin-top: 10px;
 }
 
-.screen-links_culturales ul {
+.screen-links-culturales ul {
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.screen-links_culturales li {
+.screen-links-culturales li {
     margin: 5px;
 }
 
-.screen-links_culturales a {
+.screen-links-culturales a {
     color: #2c2c2c;
     text-decoration: none;
     font-size: 12px;
@@ -185,7 +185,7 @@ body {
     text-align: center;
 }
 
-.screen-links_culturales a:hover {
+.screen-links-culturales a:hover {
     background-color: #8c9e3f;
 }
 
@@ -286,5 +286,208 @@ body {
 }
 
 .screen-links-musicales a:hover {
+    background-color: #8c9e3f;
+}
+
+/*para hobbies*/
+.pokedex.horizontal-hobbies {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 20px;
+    height: auto;
+    width: 50%;
+}
+
+/* Ajustes para la pantalla */
+.pokedex.horizontal-hobbies .screen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+}
+
+/* Ajuste del header dentro de la pantalla */
+.screen-header-horizontal-hobbies {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4b6237;
+    padding-bottom: 5px;
+}
+
+
+/* Contenido principal dentro de la pantalla en formato horizontal */
+.screen-content-horizontal-hobbies {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Contenedor de las descripciones */
+.text-content-horizontal-hobbies {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.screen-links-hobbies {
+    margin-top: 10px;
+}
+
+.screen-links-hobbies ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.screen-links-hobbies li {
+    margin: 0;
+}
+
+.screen-links-hobbies a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #9db54d;
+    display: block;
+    text-align: center;
+}
+
+.screen-links-hobbies a:hover {
+    background-color: #8c9e3f;
+}
+
+
+.mosaico-horizontal-hobbies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    max-width: 150px;
+}
+
+.mosaico-horizontal-hobbies img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*familia*/
+.img-familia{
+    margin-top: 12px;
+    width: 300px;
+}
+
+.screen-links-familia {
+    margin-top: 10px;
+}
+
+.screen-links-familia ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.screen-links-familia li {
+    margin: 5px;
+}
+
+.screen-links-familia a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #9db54d;
+    display: block;
+    text-align: center;
+}
+
+.screen-links-familia a:hover {
+    background-color: #8c9e3f;
+}
+
+/*amigos*/
+
+.img-amigos{
+    width: 300px;
+    margin-top: 12px;
+}
+
+.screen-links-amigos {
+    margin-top: 10px;
+}
+
+.screen-links-amigos ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.screen-links-amigos li {
+    margin: 5px;
+}
+
+.screen-links-amigos a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #9db54d;
+    display: block;
+    text-align: center;
+}
+
+.screen-links-amigos a:hover {
+    background-color: #8c9e3f;
+}
+
+/*mascotas*/
+
+.img-mascotas{
+    width: 300px;
+    margin-top: 12px;
+}
+
+.screen-links-mascotas {
+    margin-top: 10px;
+}
+
+.screen-links-mascotas ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.screen-links-mascotas li {
+    margin: 5px;
+}
+
+.screen-links-mascotas a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #9db54d;
+    display: block;
+    text-align: center;
+}
+
+.screen-links-mascotas a:hover {
     background-color: #8c9e3f;
 }
