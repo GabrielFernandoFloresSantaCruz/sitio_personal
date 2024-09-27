@@ -1,363 +1,290 @@
-*{
+/* Estilos Generales */
+* {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: #2c2b2b;
-}
-
-body{
-    background-color: #fed8a6;
-}
-
-.navbar {
-    background-color: #333;
-    padding: 10px 0;
-}
-
-.navbar .container {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar-links {
     list-style: none;
+}
+
+body {
+    background-color: #1a1a1a;
     margin: 0;
     padding: 0;
+}
+
+/* Contenedor Principal */
+.container {
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.navbar-links li {
-    margin: 0 15px;
-}
-
-.navbar-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 8px 16px;
-}
-
-.container{
-    background-color: #e9d7c0;
-    border: 3px solid #9b7d61;
-    width: 50vw;
+/* Estilos de la Pokédex */
+.pokedex {
+    background: #d32f2f;
+    border: 10px solid #b71c1c;
+    border-radius: 20px;
     padding: 20px;
-    margin: 0 auto;
-    border-style: dashed;
-}
-/* Pestania principal */
-.home h1{
-    color: #2c2b2b;
-    padding: 0 0 15px 0;
+    position: relative;
+    width: 500px;
 }
 
-.home h2{
-    color: #2c2b2b;
-    padding: 0 0 10px 0;
+/* Pantalla de la Pokédex */
+.screen {
+    background: #657c47;
+    border: 4px solid #4b6237;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #cfcfcf;
 }
 
-.home p{
-    padding: 0 0 30px 0;
+.screen-header {
+    border-bottom: 2px solid #4b6237;
+    padding-bottom: 5px;
 }
 
-.home img {
-    float: right;
-    margin-left: 20px;
-    width: 200px;
-    height: 200px;
-}
-
-.home ul{
-    list-style-type: none;
-    display: flex;
-    gap: 25px;
-}
-
-.home a{
-    text-decoration: none;
-    color: #914e14;
-}
-
-/* Pestania gustos */
-.gustos h1{
-    color: #2c2b2b;
-    padding: 0 0 15px 0;
-}
-
-.gustos p{
-    padding: 0 0 30px 0;
-}
-
-.gustos ul{
-    list-style-type: none;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-}
-
-.gustos a{
-    text-decoration: none;
-    color: #914e14;
-}
-
-/* Pestania gustos culturales */
-
-.gustos_culturales h1{
-    color: #2c2b2b;
-    padding: 0 0 15px 0;
-}
-
-.gustos_culturales p{
-    padding: 0 0 20px 0;
-}
-.gustos_culturales a{
-    text-decoration: none;
-    color: #914e14;
-}
-
-.gustos_culturales ul{
-    list-style-type: none;
-    display: flex;
-    gap: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.gustos_culturales img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+.screen-title {
+    font-size: 18px;
+    color: #9db54d;
     margin: 0;
-    padding: 0;
+    text-transform: uppercase;
 }
 
-.gustos_culturales .mosaico{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-    width: 300px;
-    margin: 0 auto;
-    padding: 0 0 30px 0;
+.screen-content {
+    margin-top: 10px;
 }
 
-/* Pestania gustos musicales */
-.gustos_musicales h1{
-    color: #2c2b2b;
-    padding: 0 0 15px 0;
-}
-
-.gustos_musicales p{
-    padding: 0 0 20px 0;
-}
-
-.gustos_musicales a{
-    text-decoration: none;
-    color: #914e14;
-}
-.gustos_musicales ul{
-    list-style-type: none;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-}
-
-.gustos_musicales img{
+/* Ajuste de la imagen principal */
+.screen-image {
+    border: 3px solid #4b6237;
+    border-radius: 8px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: 0;
-    padding: 0;
+    max-width: 180px;
+    margin: 0 auto 10px;
 }
-.gustos_musicales .mosaico{
+
+.screen-description {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+    background-color: #a0b757;
+    color: #2c2c2c;
+    padding: 10px;
+    border: 2px solid #657c47;
+    border-radius: 8px;
+}
+
+/* Ajuste de Imágenes en el Mosaico */
+.mosaico {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 0;
-    width: 300px;
-    margin: 0 auto;
-    padding: 0 0 30px 0;
+    gap: 10px;
+    justify-items: center;
+    margin-top: 10px;
 }
 
-/* Pestania Hobbies */
-.hobbies h1{
-    color: #2c2b2b;
-    padding: 0 0 15px 0;
-}
-
-.hobbies p{
-    padding: 0 0 20px 0;
-}
-
-.hobbies ul{
-    list-style-type: none;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-}
-
-.hobbies a{
-    text-decoration: none;
-    color: #914e14;
-}
-
-.hobbies img{
-    width: 150px;
-    height: 150px;
+.mosaico img {
+    width: 200px;
     object-fit: cover;
-    margin: 0;
-    padding: 0;
-}
-.hobbies .mosaico{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0;
-    width: 300px;
-    margin: 0 auto;
-    padding: 0 0 30px 0;
-}
-
-/* Pestania informacion*/
-.informacion h1{
-    color: #2c2b2b;
-    padding: 0 0 15px 0;
-}
-
-.informacion p{
-    padding: 0 0 20px 0;
-}
-
-.informacion ul{
-    list-style-type: none;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-}
-
-.informacion a{
-    text-decoration: none;
-    color: #914e14;
-}
-
-/* amigos */
-.pageAmigos h2{
-    color: #2c2b2b;
-    padding: 0 0 15px 0;
-}
-
-.pageAmigos p{
-    padding: 0 0 20px 0;
-}
-
-.pageAmigos .amigos img{
-    display: flex;
-    width: 100px;
     height: 200px;
-    object-fit: cover;
-    margin: 0 auto;
-    padding: 0 0 20px 0;
+    border: 2px solid #4b6237;
+    border-radius: 8px;
 }
 
-.pageAmigos .bestie h2{
-    color: #2c2b2b;
-    padding: 0 0 15px 0;
+/* Enlaces dentro de la Pantalla */
+.screen-links {
+    margin-top: 10px;
 }
 
-.pageAmigos .bestie p{
-    padding: 0 0 20px 0;
-}
-
-.pageAmigos .bestie img{
-    display: flex;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 0 auto;
-    padding: 0 0 30px 0;
-}
-
-.pageAmigos ul{
-    list-style-type: none;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-}
-
-.pageAmigos a{
-    text-decoration: none;
-    color: #914e14;
-}
-
-/* pestania familia */
-.familia h1{
-    color: #2c2b2b;
-    padding: 0 0 15px 0;
-}
-
-.familia p{
-    padding: 0 0 20px 0;
-}
-
-.familia ul{
-    list-style-type: none;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-}
-
-.familia a{
-    text-decoration: none;
-    color: #914e14;
-}
-
-.familia img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 0;
+.screen-links ul {
     padding: 0;
-}
-
-.familia .imagenF{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0 0 30px 0;
-}
-/* pestania mascotas */
-.mascotas h1{
-    color: #2c2b2b;
-    padding: 0 0 15px 0;
+    gap: 5px;
 }
 
-.mascotas p{
-    padding: 0 0 20px 0;
-}
-
-.mascotas ul{
-    list-style-type: none;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-}
-.mascotas a{
-    text-decoration: none;
-    color: #914e14;
-}
-
-.mascotas img{
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
+.screen-links li {
     margin: 0;
-    padding: 0;
 }
-.mascotas .mosaico{
+
+.screen-links a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #9db54d;
+    display: block;
+    text-align: center;
+}
+
+.screen-links a:hover {
+    background-color: #8c9e3f;
+}
+
+/* Botones de la Pokédex */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-left: 10px;
+    gap: 5px;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: inset 0 2px 4px; /* Inset hace que la sombra sea hacia dentro */
+}
+
+.red-button {
+    background-color: #d50000;
+}
+
+.blue-button {
+    background-color: #2962ff;
+}
+
+.green-button {
+    background-color: #00c853;
+}
+
+.yellow-button {
+    background-color: #ffab00;
+}
+
+/*gustos culturales*/
+.screen-links_culturales {
+    margin-top: 10px;
+}
+
+.screen-links_culturales ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.screen-links_culturales li {
+    margin: 5px;
+}
+
+.screen-links_culturales a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #9db54d;
+    display: block;
+    text-align: center;
+}
+
+.screen-links_culturales a:hover {
+    background-color: #8c9e3f;
+}
+
+/* Estilos específicos para la Pokédex en formato horizontal */
+.pokedex.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 20px;
+    height: auto;
+    width: 60%;
+}
+
+/* Ajustes para la pantalla */
+.pokedex.horizontal .screen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+}
+
+/* Ajuste del header dentro de la pantalla */
+.screen-header-horizontal {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4b6237;
+    padding-bottom: 5px;
+}
+
+
+/* Contenido principal dentro de la pantalla en formato horizontal */
+.screen-content-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Contenedor de las descripciones */
+.text-content-horizontal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+/* Estilo de las imágenes en formato mosaico */
+.mosaico-horizontal {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 0;
-    width: 300px;
-    margin: 0 auto;
-    padding: 0 0 30px 0;
+    max-width: 150px;
+}
+
+.mosaico-horizontal img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/* Botones de la Pokédex */
+.pokedex.horizontal .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo de los enlaces */
+.screen-links-musicales {
+    margin-top: 10px;
+}
+
+.screen-links-musicales ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.screen-links-musicales li {
+    margin: 0;
+}
+
+.screen-links-musicales a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #9db54d;
+    display: block;
+    text-align: center;
+}
+
+.screen-links-musicales a:hover {
+    background-color: #8c9e3f;
 }
