@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #1a1a1a;
+    background-color: #3e3e3e;
     margin: 0;
     padding: 0;
 }
@@ -22,7 +22,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilos de la Pokédex */
 .pokedex {
     background: #d32f2f;
     border: 10px solid #b71c1c;
@@ -32,7 +31,6 @@ body {
     width: 500px;
 }
 
-/* Pantalla de la Pokédex */
 .screen {
     background: #657c47;
     border: 4px solid #4b6237;
@@ -58,7 +56,6 @@ body {
     margin-top: 10px;
 }
 
-/* Ajuste de la imagen principal */
 .screen-image {
     border: 3px solid #4b6237;
     border-radius: 8px;
@@ -78,24 +75,6 @@ body {
     border-radius: 8px;
 }
 
-/* Ajuste de Imágenes en el Mosaico */
-.mosaico {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
-    justify-items: center;
-    margin-top: 10px;
-}
-
-.mosaico img {
-    width: 200px;
-    object-fit: cover;
-    height: 200px;
-    border: 2px solid #4b6237;
-    border-radius: 8px;
-}
-
-/* Enlaces dentro de la Pantalla */
 .screen-links {
     margin-top: 10px;
 }
@@ -126,7 +105,6 @@ body {
     background-color: #8c9e3f;
 }
 
-/* Botones de la Pokédex */
 .buttons {
     display: flex;
     justify-content: space-around;
@@ -158,38 +136,7 @@ body {
     background-color: #ffab00;
 }
 
-/*gustos culturales*/
-.screen-links-culturales {
-    margin-top: 10px;
-}
-
-.screen-links-culturales ul {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.screen-links-culturales li {
-    margin: 5px;
-}
-
-.screen-links-culturales a {
-    color: #2c2c2c;
-    text-decoration: none;
-    font-size: 12px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    background-color: #9db54d;
-    display: block;
-    text-align: center;
-}
-
-.screen-links-culturales a:hover {
-    background-color: #8c9e3f;
-}
-
-/* Estilos específicos para la Pokédex en formato horizontal */
+/* pokedex horizontal */
 .pokedex.horizontal {
     display: flex;
     flex-direction: row;
@@ -197,10 +144,9 @@ body {
     padding: 10px 20px;
     gap: 20px;
     height: auto;
-    width: 60%;
+    width: 1120px;
 }
 
-/* Ajustes para la pantalla */
 .pokedex.horizontal .screen {
     display: flex;
     flex-direction: column;
@@ -208,7 +154,6 @@ body {
     width: 90%;
 }
 
-/* Ajuste del header dentro de la pantalla */
 .screen-header-horizontal {
     text-align: center;
     margin-bottom: 10px;
@@ -217,14 +162,12 @@ body {
 }
 
 
-/* Contenido principal dentro de la pantalla en formato horizontal */
 .screen-content-horizontal {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-/* Contenedor de las descripciones */
 .text-content-horizontal {
     flex: 1;
     display: flex;
@@ -233,7 +176,6 @@ body {
     max-width: 300px;
 }
 
-/* Estilo de las imágenes en formato mosaico */
 .mosaico-horizontal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -250,14 +192,12 @@ body {
     margin: 0;
 }
 
-/* Botones de la Pokédex */
 .pokedex.horizontal .buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* Estilo de los enlaces */
 .screen-links-musicales {
     margin-top: 10px;
 }
@@ -289,6 +229,96 @@ body {
     background-color: #8c9e3f;
 }
 
+/*para gustos culturales*/
+.pokedex.horizontal-culturales {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 20px;
+    height: auto;
+    width: 940px;
+}
+
+.pokedex.horizontal-culturales .screen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+}
+
+.screen-header-horizontal-culturales {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4b6237;
+    padding-bottom: 5px;
+}
+
+
+.screen-content-horizontal-culturales {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.text-content-horizontal-culturales {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.screen-links-culturales {
+    margin-top: 10px;
+}
+
+.screen-links-culturales ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.screen-links-culturales li {
+    margin: 2px;
+}
+
+.screen-links-culturales a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #9db54d;
+    display: block;
+    text-align: center;
+}
+
+.screen-links-culturales a:hover {
+    background-color: #8c9e3f;
+}
+
+
+.mosaico-horizontal-culturales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+.mosaico-horizontal-culturales img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
 /*para hobbies*/
 .pokedex.horizontal-hobbies {
     display: flex;
@@ -297,10 +327,9 @@ body {
     padding: 10px 20px;
     gap: 20px;
     height: auto;
-    width: 50%;
+    width: 940px;
 }
 
-/* Ajustes para la pantalla */
 .pokedex.horizontal-hobbies .screen {
     display: flex;
     flex-direction: column;
@@ -308,7 +337,6 @@ body {
     width: 90%;
 }
 
-/* Ajuste del header dentro de la pantalla */
 .screen-header-horizontal-hobbies {
     text-align: center;
     margin-bottom: 10px;
@@ -316,15 +344,12 @@ body {
     padding-bottom: 5px;
 }
 
-
-/* Contenido principal dentro de la pantalla en formato horizontal */
 .screen-content-horizontal-hobbies {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-/* Contenedor de las descripciones */
 .text-content-horizontal-hobbies {
     flex: 1;
     display: flex;
@@ -396,11 +421,11 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0;
 }
 
 .screen-links-familia li {
-    margin: 5px;
+    margin: 3px;
 }
 
 .screen-links-familia a {
@@ -474,7 +499,7 @@ body {
 }
 
 .screen-links-mascotas li {
-    margin: 5px;
+    margin: 3px;
 }
 
 .screen-links-mascotas a {

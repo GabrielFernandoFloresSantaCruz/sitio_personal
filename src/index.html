@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +7,40 @@
     <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-    <div class="container pokedex">
-        <div class="screen">
+    <main class="container pokedex">
+        <section class="screen">
             <header class="screen-header">
                 <h1 class="screen-title">Pokemon N°2003: <br> Gabriel Flores</h1>
-                
             </header>
+            
             <div class="screen-content">
-                <img src="assets/image/psyduck.jpeg" alt="Imagen de Psyduck" class="screen-image">
+                <figure>
+                    <img src="assets/image/psyduck.jpeg" alt="Imagen de Psyduck" class="screen-image">
+                </figure>
                 <p class="screen-description">
-                    
                     Hola, tengo 21 años. Aunque generalmente me considero una persona introvertida, cuando me siento en confianza, 
                     tiendo a mostrar un lado más extrovertido y abierto. Una de mis características más marcadas es mi curiosidad; siempre estoy buscando 
-                    enterarme de lo que está sucediendo a mi alrededor (busco chisme). A pesar de esta curiosidad, tengo una memoria bastante mala así que suelo olvidar el chisme. 
+                    enterarme de lo que está sucediendo a mi alrededor (busco chisme). A pesar de esta curiosidad, tengo una memoria bastante mala, así que suelo olvidar el chisme. 
                     Inicialmente, estudié Ingeniería en Sistemas, pero pronto descubrí que no me gustaba y ahora me siento más cómodo en mi carrera actual.
-                    Mi animal favorito son los patos y me siento identificado con los Psyducks. Soy de signo géminis y mi color favorito serían los de tonos pasteles.
-                    Soy un gran fanatico de la franquicia de pokemon
+                    Mi animal favorito son los patos y me siento identificado con los Psyducks. Soy de signo géminis y mi color favorito son los tonos pastel.
+                    Soy un gran fanático de la franquicia de Pokémon.
                 </p>
-                <div class="screen-links">
+                <nav class="screen-links">
                     <ul>
                         <li><a href="gustos/">Gustos</a></li>
                         <li><a href="hobbies/">Hobbies</a></li>
                         <li><a href="informacion/">Información general</a></li>
                         <li><a href="tareas/">Tareas</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </div>
-        <div class="buttons">
-            <div class="button red-button"></div>
-            <div class="button blue-button"></div>
-            <div class="button green-button"></div>
-        </div>
-    </div>
+        </section>
+        
+        <footer class="buttons">
+            <button class="button red-button" aria-label="Red button"></button>
+            <button class="button blue-button" aria-label="Blue button"></button>
+            <button class="button green-button" aria-label="Green button"></button>
+        </footer>
+    </main>
 </body>
 </html>

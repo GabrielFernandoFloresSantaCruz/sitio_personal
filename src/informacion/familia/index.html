@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../../styles/home.css">
 </head>
 <body>
-    <div class="container pokedex vertical"> <!-- Aplicar la clase vertical -->
-        <div class="screen"> <!-- Pantalla de la Pokédex -->
-            <header class="screen-header"> <!-- Encabezado de la pantalla -->
+    <main class="container pokedex vertical">
+        <section class="screen">
+            <header class="screen-header">
                 <h1 class="screen-title">Familia</h1>
             </header>
-            <div class="screen-content"> <!-- Contenido de la pantalla -->
+            <div class="screen-content">
                 <p class="screen-description">
                     Soy el hermano menor de mi familia y vivo con mis padres y mi hermana. Con el resto de mi familia no suelo interactuar mucho, excepto en reuniones o fiestas familiares.
                 </p>
@@ -25,22 +25,26 @@
                 <p class="screen-description">
                     Mi hermana es médico de profesión y actualmente trabaja como médico general en un hospital llamado Corazón de Jesús. Tiene 27 años.
                 </p>
-                <img src="../../assets/image/familia.jpg" alt="Imagen de familia" class="img-familia">
+                <figure>
+                    <img src="../../assets/image/familia.jpg" alt="Imagen de familia" class="img-familia">
+                </figure>
             </div>
-            <ul class="screen-links-familia">
-                <li>
-                    <a href="../">Volver atrás</a>
-                </li>
-                <li>
-                    <a href="../../">Volver al inicio</a>
-                </li>
-            </ul>
-        </div>
-        <div class="buttons"> <!-- Botones de la Pokédex -->
+            <nav class="screen-links-familia">
+                <ul>
+                    <li>
+                        <a href="../">Volver atrás</a>
+                    </li>
+                    <li>
+                        <a href="../../">Volver al inicio</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <footer class="buttons">
             <div class="button red-button"></div>
             <div class="button blue-button"></div>
             <div class="button green-button"></div>
-        </div>
-    </div>
+        </footer>
+    </main>
 </body>
 </html>
