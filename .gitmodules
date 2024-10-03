@@ -1,0 +1,6 @@
+[submodule "src/tareas/mondrian"]
+	path = src/tareas/mondrian
+	url = git@github.com:GabrielFernandoFloresSantaCruz/Mondrian.git
+[submodule "src/tareas/EjerciciosMaquetacion"]
+	path = src/tareas/EjerciciosMaquetacion
+	url = git@github.com:GabrielFernandoFloresSantaCruz/ejercicios_maquetacion_final.git
